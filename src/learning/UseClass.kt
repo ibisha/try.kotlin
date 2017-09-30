@@ -8,8 +8,9 @@ class IntPair(val first: Int, val second: Int) {
 
 fun main(args: Array<String>) {
     val ip: IntPair = IntPair(3, 5)
-    println("Sum : ${ip.sum()}")
-    println("Max : ${ip.max()}")
-    println("Swap : ${ip.swap().first}")
+    println("Sum : ${ip.sum()}") // => 8
+    println("Max : ${ip.max()}") // => 5
+    println("Swap : ${ip.swap().first}, ${ip.swap().second}") // => 5,3
+
 }
 
