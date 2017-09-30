@@ -2,15 +2,15 @@ package helloworld
 
 fun main(args: Array<String>) {
     for (i in 1..100) {
-        fizzBuzz(i)
+        println(fizzBuzz(i))
     }
 }
 
-fun fizzBuzz(num: Int) {
-    when {
-        num % 3 == 0 && num % 5 == 0 -> println("FizzBuzz")
-        num % 3 == 0 -> println("Fizz")
-        num % 5 == 0 -> println("Buzz")
-        else -> println(num)
+fun fizzBuzz(num: Int) : Any{
+    return when {
+        num % 3 == 0 && num % 5 == 0 -> "FizzBuzz"
+        num % 3 == 0 -> "Fizz"
+        num % 5 == 0 -> "Buzz"
+        else -> num
     }
 }
