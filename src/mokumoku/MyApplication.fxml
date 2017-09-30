@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mokumoku.MyController">
+    <!--スタイルシート-->
+    <stylesheets>
+        <URL value="@sample.css"/>
+    </stylesheets>
+
+    <!--部品-->
+    <!--fx:idでコントローラやスタイルファイルで使うIDを指定-->
+    <top>
+        <Label fx:id="label1" text="This is FXML!"/>
+    </top>
+    <center>
+        <TextField fx:id="field1"/>
+    </center>
+    <bottom>
+        <Button fx:id="btn1" onAction="#btn1OnAction" text="Click"/>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,5 @@
+/*スタイル名は先頭に-fxがつく*/
+Label#label1 {
+    -fx-font-family: Serif;
+    -fx-font-size: 24pt;
+}
